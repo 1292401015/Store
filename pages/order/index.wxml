@@ -1,0 +1,125 @@
+<!-- tab栏 -->
+<Tabs tabs="{{tabs}}" bindTabsChange="handleTabsChange">
+
+
+
+    <block wx:if="{{tabs[0].isActive}}">
+            <view class="order_main">
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+        <view class="order_item">
+            <view class="order_no_row">
+                <view class="order_no_text">订单编号</view>
+                <view class="order_no_value">HIHIEIJGAOJF20032034</view>
+            </view>
+
+            <view class="order_price_row">
+                <view class="order_price_text">订单价格</view>
+                <view class="order_price_value">$ 12314</view>
+            </view>
+
+            <view class="order_time_row">
+                <view class="order_time_text">订单日期</view>
+                <view class="order_time_value">2019/8/23下午12:32:34</view>
+            </view>
+        </view>
+    </view>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">头发长出来再开发...</block>
+    <block wx:elif="{{tabs[2].isActive}}">头发长出来再开发...</block>
+    <block wx:elif="{{tabs[3].isActive}}">头发长出来再开发...</block>
+</Tabs>

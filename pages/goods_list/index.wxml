@@ -1,0 +1,24 @@
+<!-- 商品列表页面 -->
+<SearchInput></SearchInput>
+<!-- tab栏 -->
+<Tabs tabs="{{tabs}}" bindTabsChange="handleTabsChange">
+    <block wx:if="{{tabs[0].isActive}}">
+        <navigator class="first_tap"
+        wx:for="{{goodsList}}"
+        wx:key="goods_id"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 图片 -->
+            <view class="image">
+                <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://ku.90sjimg.com/element_origin_min_pic/18/01/18/726995c65d604ebb91a3d4b771f6b7cc.jpg!/fwfh/804x619/quality/90/unsharp/true/compress/true'}}"/>
+            </view>
+            <!-- 文字内容 -->
+            <view class="content">
+                <view class="name">{{item.goods_name}}</view>
+                <view class="price">￥{{item.goods_price}}</view>
+            </view>
+        </navigator>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">头发长出来再开发...</block>
+    <block wx:elif="{{tabs[2].isActive}}">头发长出来再开发...</block>
+</Tabs>

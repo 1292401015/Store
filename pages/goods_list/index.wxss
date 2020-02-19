@@ -1,0 +1,28 @@
+/* pages/goods_list/index.wxss */
+.first_tap {
+    display: flex;
+    padding: 40rpx;
+}
+.first_tap .image {
+    flex: 1;
+    margin-right: 40rpx;
+}
+.first_tap .content {
+    flex: 2;
+}
+.first_tap .content .name {
+    color: #333;
+    font-size: 14px;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal!important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 20rpx;
+}
+.first_tap .content .price {
+    color: var(--themeColor);
+    margin-top: 40rpx;
+}

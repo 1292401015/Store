@@ -1,0 +1,132 @@
+/* pages/user/index.wxss */
+page{
+  background-color: #edece8;
+}
+// 用户信息开始
+.user_info_wrap {
+    height: 45vh;
+    background-color: var(--themeColor);
+    overflow: hidden;
+    .user_img_wrap {
+        position: relative;
+      .user_bg {
+        height: 45vh;
+        //高斯模糊
+        filter: blur(10rpx);
+      }
+  
+      .user_info {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);//左移自身一半
+          top: 20%;
+          text-align: center;
+        .user_icon {
+            width: 190rpx;
+            height: 190rpx;
+            border-radius: 50%;
+        }
+  
+        .user_name {
+            color: #fff;
+            margin-top: 30rpx;
+            font-size: 40rpx;
+        }
+      }
+    }
+    .user_btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);//左移自身一半
+        top: 15%;
+        // border: 1rpx solid greenyellow;
+        // color: greenyellow;
+        // font-size: 38rpx;
+        // padding: 30rpx 90rpx;
+        // border-radius: 10rpx;
+        
+        // button{
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     opacity: 0;//透明度
+        // }
+    }
+  }
+// 用户信息结束
+
+//内容 开始
+.user_content{
+  position: relative;
+  .user_main{
+    padding-bottom: 70rpx;
+    color: #666;
+    position: absolute;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40rpx;
+
+    .history_wrap{
+      background-color: #fff;
+      display: flex;
+      navigator{
+        flex: 1;
+        text-align: center;
+        padding: 10rpx 0;
+        .his_num{
+          color: var(--themeColor);
+        }
+        .his_name{}
+      }
+      
+    }
+
+    .orders_wrap{
+      background-color: #fff;
+      margin-top: 30rpx;
+      .orders_title{
+        padding: 20rpx;
+        border-bottom: 1px solid #ccc;
+      }
+      .orders_content{
+        display: flex;
+        navigator{
+          flex: 1;
+          text-align: center;
+          padding: 15rpx 0;
+          .iconfont{
+            color: var(--themeColor);
+          }
+          .order_name{}
+        }
+      }
+
+    }
+    .address_wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      padding: 20rpx;
+    }
+    .app_info_wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      .app_info_item{
+        padding: 20rpx;
+        border-bottom: 1px solid #ccc;
+      }
+      .app_info_contact{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .recommend-wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      padding: 20rpx;
+    }
+  }
+}
+//内容 结束

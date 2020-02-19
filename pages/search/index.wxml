@@ -1,0 +1,15 @@
+<view class="search_row">
+    <input value="{{inpValue}}" placeholder="请输入您要搜索的商品" bindinput="handleInput"></input>
+    <button bind:tap="handleCancer" hidden="{{!isFocus}}">取消</button>
+</view>
+
+<view class="search_content">
+    <view class="search_item"
+    wx:for="{{goods}}"
+    wx:key="goods_id"
+    >
+        <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+            {{item.goods_name}}
+        </navigator>
+    </view>
+</view>

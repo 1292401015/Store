@@ -1,0 +1,60 @@
+/* pages/collect/index.wxss */
+page{
+    background-color: #f3f4f6;
+}
+.collect_main{
+    padding-bottom: 30rpx;
+    background-color: #f3f4f6;
+    .collect_title{
+        padding: 30rpx 0;
+        .collect_tips{
+            background-color: #fff;
+            padding: 15rpx;
+            border:1rpx solid #ccc;
+            margin-left: 25rpx;
+        }
+        .active{
+            color: var(--themeColor);
+            border-color: currentColor;
+        }
+    }
+    .collect_content{
+        .first_tap{
+            background-color: #fff;
+            display: flex;
+            margin: 0 20rpx;
+            border-bottom: 10rpx solid #f3f4f6;
+            .image{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width:70%;
+                }
+            }
+            .content{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .name{
+                    color: #333;
+                    font-size: 14px;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    white-space: normal!important;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    margin-top: 20rpx;
+                }
+                .price{
+                    color: var(--themeColor);
+                    margin-top: 40rpx;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+<view class="yg_index">
+  <!-- 搜索框 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图 开始-->
+  <view class="index_swiper">
+    <swiper indicator-dots autoplay circular interval="3000 " >
+      <swiper-item
+      wx:for="{{swiperList}}"
+      wx:key="goods_id"
+      >
+        <navigator url="item.navigator_url">
+          <image mode="widthFix" src="{{item.image_src}}" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图 结束 -->
+
+  <!-- 导航图 开始 -->
+  <view class="index_cate">
+    <navigator
+    wx:for="{{catesList}}"
+    wx:key="name"
+    url="/pages/category/index"
+    open-type="switchTab"
+    >
+      <image mode="widthFix" src="{{item.image_src}}" mode="widthFix">    
+      </image>
+    </navigator>
+  </view>
+  <!-- 导航图 结束 -->
+
+  <!-- 楼层 开始 -->
+  <view class="index_floor">
+    <view class="floor_group"
+    wx:for="{{floorList}}"
+    wx:for-item="item1"
+    wx:for-index="index1"
+    wx:key="floor_title"
+    >
+      <!-- 标题 -->
+      <view class="floor_title">
+        <image mode="widthFix" src="{{item1.floor_title.image_src}}" />
+      </view>
+      <!-- 内容 -->
+      <view class="floor_list">
+        <navigator
+        wx:for="{{item1.product_list}}"
+        wx:for-item="item2"
+        wx:for-index="index2"
+        wx:key="name"
+        url="/pages/goods_list/index?query=女装"
+        >
+          <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}"></image>
+        </navigator>  
+      </view>
+    </view>
+  </view>
+  <!-- 楼层 结束 -->
+</view>

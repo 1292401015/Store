@@ -1,0 +1,16 @@
+<!-- tab栏 开始-->
+<view class="tabs">
+  <view class="tabs_title">
+    <view 
+    wx:for="{{tabs}}"
+    wx:key="id"
+    class="{{item.isActive?'active':''}}"
+    bindtap="handleTapsChange"
+    data-index="{{index}}"
+    >{{item.title}}</view>
+  </view>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>
+<!-- tab栏 结束-->
